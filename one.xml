@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Cricketlist>
+
+
+    <match>
+    
+    <name>Bat</name>
+    
+    <cost>$10</cost>
+    
+    </match>
+    
+    
+    <match>
+    
+    <name>Ball</name>
+    
+    <cost>$5</cost>
+    
+    </match>
+    
+    
+    <match>
+    
+    <name>gloves</name>
+    
+    <cost>$8</cost>
+    
+    </match>
+    
+    </Cricketlist>
