@@ -1,19 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
     
-    <xsl:template match="/bank">
+    <xsl:template match="/data">
+
     <html>
         <head>
-            <title>TASKED</title>
+            <title>Collection</title>
+
             <style>
                 body{
                     background-color:black;
-                    color:white;
+                    color: white;
+                    
                 }
-
+        
                 table{
-                    margin-left: 480px;
-                    box-shadow: 3px 3px 5px 5px crimson;
+                    margin-left: 395px;
+                    box-shadow: 3px 3px 5px 5px cyan;
                 }
                 h1{
                     text-align: center;
@@ -24,31 +27,28 @@
                     font-weight:bold;
                     text-shadow:3px 3px 3px yellow;
                 }
-                    
-                
             </style>
         </head>
 
         <body>
-            <h1>BANK EMPLOYEE TABLE</h1>
+            
+            <h1>My CD Collection💿</h1>
 
-            <table border="1" cellspacing="20px" cellpadding="15px">
+            <table border="2" cellspacing="30px" cellpadding="10px">
                 <tr>
-                    <th bgcolor="lightgrey">Id</th>
-                    <th bgcolor="lightgrey">Name</th>
-                    <th bgcolor="lightgrey">Salary</th>
+                    <th bgcolor="green">Title</th>
+                    <th bgcolor="green">Artist</th>
                 </tr>
 
-                <xsl:for-each select="employee">
+                <xsl:for-each select="collection">
                     <tr>
-                        <td><xsl:value-of select="id"></xsl:value-of></td>
-                        <td><xsl:value-of select="name"></xsl:value-of></td>
-                        <td><xsl:value-of select="salary"></xsl:value-of></td>
+                        <td><xsl:value-of select="title"></xsl:value-of></td>
+                        <td><xsl:value-of select="artist"></xsl:value-of></td>
                     </tr>
                 </xsl:for-each>
             </table>
         </body>
     </html>
 
-    </xsl:template>
+    </xsl:template> 
 </xsl:stylesheet>
