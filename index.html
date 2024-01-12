@@ -7,20 +7,20 @@
     <title>Document</title>
 </head>
 <body>
-    <h1 class="bg-dark text-center text-white fw-bold">COMPARISON PRODUCTS</h1>
+    <h1 class=" display-1 bg-dark text-center text-white fw-bold">COMPARISON PRODUCTS</h1>
     <div class="container">
         <div class="row">
             <div class="col-lg-8">
                 <table class="table">
                     <tr>
                         <th>Select Products</th>
-                        <th>
-                        <select name="" class="form-control" id="">
+                        <th class="col-lg-6">
+                        <select name="" class="form-control" id="select1" onchange="item1(this.value)">
                             <option value="">-- Select Anyone --</option>
                         </select>
                     </th>
-                    <th>
-                        <select name="" class="form-control" id="">
+                    <th class="col-lg-6">
+                        <select name="" class="form-control" id="select2" onchange="item2(this.value)">
                             <option value="">-- Select Anyone --</option>
                         </select>
                     </th>
@@ -28,30 +28,30 @@
                     <tr>
                         <th>Product Image</th>
                         <td>
-                            <img src="./images/HuaweiNova9-b.jpg" class="img-fluid" alt="">
+                            <img id="img1" src="" class="img-fluid" alt="">
                         </td>
 
                         <td>
-                            <img src="./images/HuaweiNova9-b.jpg" class="img-fluid" alt="">
+                            <img id="img2" src="" class="img-fluid" alt="">
                         </td>
                     </tr>
 
-                    <tr>
-                        <th>Product Brand</th>
-                        <td>50000</td>
-                        <td>50000</td>
-                    </tr>
-
+                    
                     <tr>
                         <th>Product Price</th>
-                        <td>50000</td>
-                        <td>50000</td>
+                        <td id="price1"></td>
+                        <td id="price2"></td>
                     </tr>
-
+                    
+                    <tr>
+                        <th>Product Brand</th>
+                        <td id="brand1"></td>
+                        <td id="brand2"></td>
+                    </tr>
                     <tr>
                         <th>Product Description</th>
-                        <td>50000</td>
-                        <td>50000</td>
+                        <td id="desc1"></td>
+                        <td id="desc2"></td>
                     </tr>
                 </table>
             </div>
